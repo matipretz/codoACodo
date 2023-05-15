@@ -46,7 +46,7 @@ public class cACMenu {
                 System.exit(0);
             default:
                 System.out.println("Opción no válida. Vuelva a intentarlo.");
-                break;
+                menu();
         }    
     }
 }

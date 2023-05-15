@@ -1,6 +1,6 @@
 Repositorio para los ejercicios de Codo 4.0 (2023) comison 23438
 
-Para iniciar el programa debe correr src/cACMenu
+Importar el paquete src a un proyecto y correr ./src/cACMenu.java
 
 Alumno: Matias Martin Murad Pretz.
 

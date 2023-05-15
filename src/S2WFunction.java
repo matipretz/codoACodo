@@ -76,9 +76,9 @@ public class S2WFunction {
         if (opcion.equalsIgnoreCase("n")) {
             System.out.println(
                     "Muchas gracias por jugar a Spin2Win, la ruleta mas divertida del condado. Te llevas un total de "
-                            + Spin2Win.fichas + " fichas. \nPresiona [Enter] para salir.");
+                            + Spin2Win.fichas + " fichas. \nPresiona [Enter] para volver al menu principal.");
             input.nextLine();
-            System.exit(0);
+            cACMenu.menu();
         } else {
             System.out.println(errorOpcion);
         }

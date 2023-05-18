@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class desafio1MiPrimerProgramaJava {
+public class Desafio1MiPrimerProgramaJava {
 
   public static void def1() {
     System.out.println("############################### MiPrimerProgramaJava ##########################");

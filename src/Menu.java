@@ -22,7 +22,8 @@ public class Menu {
         System.out.println("2. Segundo desafio: Calificaciones");
         System.out.println("3. Tercer desafio: Validaciones");
         System.out.println("4. Cuarto desafio: Ruleta electronica");
-        System.out.println("5. Salir");
+        System.out.println("5. Quinto desafio: Arreglos");
+        System.out.println("6. Salir");
 
         Scanner sc = new Scanner(System.in);
         int caso = sc.nextInt();

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cACMenu {
+public class Menu {
     public static void main(String[] args) throws Exception {
         menu();
     }
@@ -41,12 +41,16 @@ public class cACMenu {
                 Spin2Win.juego();
                 break;
             case 5:
+                desafio4Arreglos.def4();
+                break;
+            case 6:
                 System.out.println("Presiona [Enter] para salir.");
                 sc.nextLine();
                 System.exit(0);
             default:
                 System.out.println("Opción no válida. Vuelva a intentarlo.");
                 menu();
-        }    
+        }   
+        sc.close(); 
     }
 }

@@ -34,6 +34,7 @@ public class desafio2CalificacionDeAlumnos {
           }
           System.out.println("Presiona [Enter] para volver al menu principal.");
           sc.nextLine();
-          cACMenu.menu();
+          sc.close();
+          Menu.menu();
      }
 }

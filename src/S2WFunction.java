@@ -22,15 +22,16 @@ public class S2WFunction {
                 jugada = input.nextInt();
                 if (jugada > min && jugada <= max) {
                     validNumero = true;
-                } else {
+                } 
+                else {
                     System.out.println(errorJugada);
                 }
-            } else {
+            } 
+            else {
                 input.next();
                 System.out.println(errorJugada);
             }
         }
-
     }
 
     public void tomarFichas() {// Verifica e inicializa la cantidad de fichas que se quieren jugar.
@@ -41,11 +42,12 @@ public class S2WFunction {
                 input.nextLine();
                 if (fichasEnJuego > 0 && fichasEnJuego <= Spin2Win.fichas) {
                     validFichas = true;
-                } else {
-                    System.out.println(
-                            "No tenes esa cantidad. Tenes " + Spin2Win.fichas + " fichas.\nVolve a intentarlo:");
+                } 
+                else {
+                    System.out.println("No tenes esa cantidad. Tenes " + Spin2Win.fichas + " fichas.\nVolve a intentarlo:");
                 }
-            } else {
+            } 
+            else {
                 input.next();
                 System.out.println("¡Error! Tenes: " + Spin2Win.fichas + " fichas.\nVolve a intentarlo:");
             }
@@ -57,11 +59,10 @@ public class S2WFunction {
         int ruleta = x.nextInt(37);
         if (jugada == ruleta) {
             Spin2Win.fichas = Spin2Win.fichas + (fichasEnJuego * 35);
-            System.out.println("¡Acertaste! Salio el numero " + ruleta
-                    + "¡Tus fichas jugadas se multiplican por 35! Ahora tenés " + Spin2Win.fichas
-                    + " fichas.\n¿Queres volver a jugar?[s]/[n]");
+            System.out.println("¡Acertaste! Salio el numero " + ruleta+ "¡Tus fichas jugadas se multiplican por 35! Ahora tenés " + Spin2Win.fichas + " fichas.\n¿Queres volver a jugar?[s]/[n]");
             input.nextLine();
-        } else {
+        } 
+        else {
             Spin2Win.fichas = Spin2Win.fichas - fichasEnJuego;
             System.out.println("Lo lamento, perdiste. Salio el numero " + ruleta + " Ahora tenés " + Spin2Win.fichas
                     + " fichas.\n¿Queres voler a intentarlo? [s]/[n]");
@@ -75,11 +76,11 @@ public class S2WFunction {
         }
         if (opcion.equalsIgnoreCase("n")) {
             System.out.println(
-                    "Muchas gracias por jugar a Spin2Win, la ruleta mas divertida del condado. Te llevas un total de "
-                            + Spin2Win.fichas + " fichas. \nPresiona [Enter] para volver al menu principal.");
+                    "Muchas gracias por jugar a Spin2Win, la ruleta mas divertida del condado. Te llevas un total de " + Spin2Win.fichas + " fichas. \nPresiona [Enter] para volver al menu principal.");
             input.nextLine();
-            cACMenu.menu();
-        } else {
+            Menu.menu();
+        } 
+        else {
             System.out.println(errorOpcion);
         }
     }

@@ -67,6 +67,7 @@ public class desafio1MiPrimerProgramaJava {
 
     System.out.println("Presiona [Enter] para volver al menu principal.");
      sc.nextLine();
-     cACMenu.menu();
+     sc.close();
+     Menu.menu();
   }
 }

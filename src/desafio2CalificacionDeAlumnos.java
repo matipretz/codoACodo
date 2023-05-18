@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class desafio2CalificacionDeAlumnos {
+public class Desafio2CalificacionDeAlumnos {
 
      public static void def2() {
           System.out.println("############################### CalificacionDeAlumnos #########################");

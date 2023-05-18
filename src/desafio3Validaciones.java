@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class desafio3Validaciones {
+public class Desafio3Validaciones {
 
     public static void def3() {
         System.out.println("############################### Validaciones ##################################");

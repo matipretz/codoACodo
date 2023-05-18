@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class desafio4Arreglos {
+public class Desafio4Arreglos {
     public static void def4() {
         System.out.println("############################### Arreglos ######################################");
         System.out.println("#                                                                             #");

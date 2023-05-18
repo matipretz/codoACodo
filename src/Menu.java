@@ -28,20 +28,20 @@ public class Menu {
         int caso = sc.nextInt();
         switch (caso) {
             case 1:
-                desafio1MiPrimerProgramaJava.def1();
+                Desafio1MiPrimerProgramaJava.def1();
                 break;
             case 2:
-                desafio2CalificacionDeAlumnos.def2();
+                Desafio2CalificacionDeAlumnos.def2();
                 break;
             case 3:
-                desafio3Validaciones.def3();
+                Desafio3Validaciones.def3();
                 break;
             case 4:
                 System.out.println(S2WFunction.bienvenida);
                 Spin2Win.juego();
                 break;
             case 5:
-                desafio4Arreglos.def4();
+                Desafio4Arreglos.def4();
                 break;
             case 6:
                 System.out.println("Presiona [Enter] para salir.");

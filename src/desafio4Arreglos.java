@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Desafio4Arreglos {
@@ -14,7 +15,21 @@ public class Desafio4Arreglos {
         ● Hacer un array que me permita la carga por teclado de
         10 notas de clases, terminada la carga arrojará, las notas
         cargadas y el promedio de ellas.
-        
+        */
+        System.out.println("Bienvenido. Ingrese notas:");
+        int[] arreglo = new int[10];
+        for (int i = 0; i < arreglo.length; i++) {
+            arreglo[i] = sc.nextInt();
+        }
+        sc.close();
+    
+      System.out.println(Arrays.toString(arreglo));
+
+
+
+
+
+        /*
         Desafío de clase - 2
         ● Programar una aplicación que utilice un arraylist
         para cargar un listado de cosas a comprar en el
@@ -31,9 +46,9 @@ public class Desafio4Arreglos {
         https://app.codingrooms.com/w/8sZ6zg6rD4FY
         */
 
-        System.out.println("Presiona [Enter] para volver al menu principal.");
+      /*   System.out.println("Presiona [Enter] para volver al menu principal.");
         sc.nextLine();
         sc.close();
-        Menu.menu();
+        Menu.menu();*/
     }
 }

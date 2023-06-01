@@ -1,13 +1,8 @@
 import java.util.Scanner;
 
-public class Desafio3Validaciones {
+public class C_Desafio {
 
-    public static void def3() {
-        System.out.println("############################### Validaciones ##################################");
-        System.out.println("#                                                                             #");
-        System.out.println("# 1. Completar las estructuras faltates para verificar todos los datos.       #");
-        System.out.println("#                                                                             #");
-        System.out.println("###############################################################################\n");
+    public static void desafio3() {
         Scanner sc = new Scanner(System.in);
         String mayorDe18, realizoEjercicios, asistencia, trabajoFinal;
 
@@ -53,9 +48,6 @@ public class Desafio3Validaciones {
             System.out.println("Lo lamento, pero todavía no podés recibir el diploma. =(");
         }
         System.out.println("Presiona [Enter] para volver al menu principal.");
-        sc.nextLine();
         sc.close();
-
-        Menu.menu();
     }
 }

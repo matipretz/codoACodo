@@ -1,14 +1,8 @@
-
 import java.util.Scanner;
 
-public class Desafio2CalificacionDeAlumnos {
+public class B_Desafio {
 
-     public static void def2() {
-          System.out.println("############################### CalificacionDeAlumnos #########################");
-          System.out.println("#                                                                             #");
-          System.out.println("# 1. Mostrar un mensaje por consola segun la calificacion.                    #");
-          System.out.println("#                                                                             #");
-          System.out.println("###############################################################################\n");
+     public static void desafio2() {
           Scanner sc = new Scanner(System.in);
           System.out.println("Ingrese su calificacion y presione [ENTER]");
           int cal = sc.nextInt();
@@ -32,9 +26,6 @@ public class Desafio2CalificacionDeAlumnos {
           else if(cal<0||cal>10)   {
                System.out.print("Dato incorrecto\n");
           }
-          System.out.println("Presiona [Enter] para volver al menu principal.");
-          sc.nextLine();
           sc.close();
-          Menu.menu();
      }
 }

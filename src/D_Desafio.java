@@ -1,13 +1,8 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Desafio4Arreglos {
-    public static void def4() {
-        System.out.println("############################### Arreglos ######################################");
-        System.out.println("#                                                                             #");
-        System.out.println("# 1. Completar los desafios de clase                                          #");//falta
-        System.out.println("#                                                                             #");
-        System.out.println("###############################################################################\n");
+public class D_Desafio{
+    public static void desafio4() {
         Scanner sc = new Scanner(System.in);
         int[] arreglo = new int[10];
 
@@ -28,11 +23,6 @@ public class Desafio4Arreglos {
       System.out.println("Suma: " + sum);
       System.out.println("Primedio: " + sum/arreglo.length);
 
-
-
-
-
-
         /*###############################################################################
         Desafío de clase - 2
         ● Programar una aplicación que utilice un arraylist
@@ -51,10 +41,6 @@ public class Desafio4Arreglos {
 
         https://app.codingrooms.com/w/8sZ6zg6rD4FY
         */
-
-        System.out.println("Presiona [Enter] para volver al menu principal.");
-        sc.nextLine();
         sc.close();
-        Menu.menu();
     }
 }

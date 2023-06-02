@@ -1,4 +1,5 @@
 package desafios;
+
 public class A_Desafio {
 
     public static void desafio1() {
@@ -11,22 +12,30 @@ public class A_Desafio {
         char cha1, cha2;
         boolean boo1, boo2;
         // InicializaciC3n de variables primitivas:
-        byt1=Byte.MAX_VALUE;byt2=Byte.MIN_VALUE;
-        sho1=Short.MAX_VALUE;sho2=Short.MIN_VALUE;
-        int1=Integer.MAX_VALUE;int2=Integer.MIN_VALUE;
-        lon1=Long.MAX_VALUE;lon2=Long.MIN_VALUE;
-        flo1=Float.MAX_VALUE;flo2=Float.MIN_VALUE;
-        dou1=Double.MAX_VALUE;dou2=Double.MIN_VALUE;
-        cha1='A';cha2='z';
-        boo1=true;boo2=false;
+        byt1 = Byte.MAX_VALUE;
+        byt2 = Byte.MIN_VALUE;
+        sho1 = Short.MAX_VALUE;
+        sho2 = Short.MIN_VALUE;
+        int1 = Integer.MAX_VALUE;
+        int2 = Integer.MIN_VALUE;
+        lon1 = Long.MAX_VALUE;
+        lon2 = Long.MIN_VALUE;
+        flo1 = Float.MAX_VALUE;
+        flo2 = Float.MIN_VALUE;
+        dou1 = Double.MAX_VALUE;
+        dou2 = Double.MIN_VALUE;
+        cha1 = 'A';
+        cha2 = 'z';
+        boo1 = true;
+        boo2 = false;
         // Salida de valores:
-        System.out.println("Byte:\n"+byt1+"\n"+byt2);
-        System.out.println("\nShort:\n"+sho1+"\n"+sho2);
-        System.out.println("\nInteger:\n"+int1+"\n"+int2);
-        System.out.println("\nLong:\n"+lon1+"\n"+lon2);
-        System.out.println("\nFloat:\n"+flo1+"\n"+flo2);
-        System.out.println("\nDouble:\n"+dou1+"\n"+dou2);
-        System.out.println("\nCharacter:\n"+cha1+"\n"+cha2);
-        System.out.println("\nBoolean:\n"+boo1+"\n"+boo2);
+        System.out.println("Byte:\n" + byt1 + "\n" + byt2);
+        System.out.println("\nShort:\n" + sho1 + "\n" + sho2);
+        System.out.println("\nInteger:\n" + int1 + "\n" + int2);
+        System.out.println("\nLong:\n" + lon1 + "\n" + lon2);
+        System.out.println("\nFloat:\n" + flo1 + "\n" + flo2);
+        System.out.println("\nDouble:\n" + dou1 + "\n" + dou2);
+        System.out.println("\nCharacter:\n" + cha1 + "\n" + cha2);
+        System.out.println("\nBoolean:\n" + boo1 + "\n" + boo2);
     }
 }

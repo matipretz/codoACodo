@@ -1,3 +1,4 @@
+package desafios;
 /* Desafío II - Funciones y estructuras de control
 ● Realizar una función que permita cargar datos numéricos y
 Strings vía teclado:

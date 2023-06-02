@@ -1,3 +1,4 @@
+package desafios;
 public class A_Desafio {
 
     public static void desafio1() {

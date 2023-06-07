@@ -3,8 +3,16 @@ import desafios.*;
 import java.util.Scanner;
 
 public class CAC4 {
+    public static void pausa(int tiempo) {//Pausa la ejecucion pasando milisegundos como argumento.    
+        try {
+            Thread.sleep(tiempo);
+            } 
+        catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            }
+        }
     public static void main(String[] args) {
-        System.out.print("### MENÚ PRINCIPAL ###\nSeleccione un ejercicio:\n 1. Imprimir variables.\n 2. Califcador.\n 3. Certificador.\n 4. Arreglos.\n 5. Metodos.\n 6. Funciones I.\n 7. Funciones II.\n 8. Funciones III.\n 9. Funciones y estructuras de control I.\n10. Funciones y estructuras de control II.\n11. Juego de ruleta.");
+        System.out.print("### MENÚ PRINCIPAL ###\nSeleccione un ejercicio:\n 1. Imprimir variables.\n 2. Califcador.\n 3. Certificador.\n 4. Arreglos.\n 5. Metodos.\n 6. Funciones I.\n 7. Funciones II.\n 8. Funciones III.\n 9. Funciones y estructuras de control I.\n10. Funciones y estructuras de control II.\n11. Juego de ruleta.\n12. SALIR.\n>");
         Scanner sc = new Scanner(System.in);
         int caso = sc.nextInt();          
         switch (caso) {
@@ -41,6 +49,10 @@ public class CAC4 {
             case 11:
                 S2.welcome();
                 break;
+            case 12:
+                System.out.println("Saliendo...");
+                pausa(1000);
+                System.exit(0);
             default:
                 System.out.println("Opción no válida. Vuelva a intentarlo.");
                 break;

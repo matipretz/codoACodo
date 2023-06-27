@@ -22,7 +22,7 @@ public class S2WFunction {
         while (!validNumero) {
             if (input.hasNextInt()) {
                 jugada = input.nextInt();
-                if (jugada > min && jugada <= max) {
+                if (jugada >= min && jugada <= max) {
                     validNumero = true;
                 } else {
                     System.out.println(errorJugada);
@@ -63,13 +63,24 @@ public class S2WFunction {
             input.nextLine();
         } else {
             S2.fichas = S2.fichas - fichasEnJuego;
-            System.out.println("Lo lamento, perdiste. Salio el numero " + ruleta + " Ahora tenés " + S2.fichas
-                    + " fichas.\n¿Queres voler a intentarlo? [s]/[n]");
+
+            if (S2.fichas == 0) {
+                System.out.println(
+                    
+                        "Lo lamento, perdiste. Salio el numero " + ruleta + "\nYa no tienes fichas.\nMuchas gracias por jugar a Spin2Win, la ruleta mas divertida del condado. \nMejor suerte la proxima vez. \nPresiona [Enter] para salir.");
+                input.nextLine();
+                System.exit(0);
+            } else {
+                System.out.println("Lo lamento, perdiste. Salio el numero " + ruleta + " Ahora tenés " + S2.fichas
+                        + " fichas.\n¿Queres voler a intentarlo? [s]/[n]");
+            }
+
         }
     }
 
     public void opcionM() {
         String opcion = input.nextLine();
+
         if (opcion.equalsIgnoreCase("s")) {
             S2.juego();
         }
